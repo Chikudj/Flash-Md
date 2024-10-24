@@ -1,5 +1,5 @@
 {
-  "name": "FLASH-MD",
+  "name": "PIRATE MD",
   "description": "An easy and simple WhatsApp bot developed by France King",
   "keywords": ["bot", "node", "baileys", "whatsapp"],
   "logo": "https://files.catbox.moe/nqgz89.jpg",
@@ -10,7 +10,7 @@
   "env": {
     "PREFIX": {
       "description": "Set the prefix for bot commands. You can use multiple prefixes by separating them with commas. Example: '.', '#', '!'",
-      "value": ".",
+      "value": "/",
       "required": false
     },
     "AUTO_READ_MESSAGES": {
@@ -60,7 +60,7 @@
     },
     "BOT_MODE": {
       "description": "Set the bot to 'private' mode to restrict access to certain users or 'public' mode for general access.",
-      "value": "public",
+      "value": "private",
       "required": false
     },
     "HEROKU_API_KEY": {
@@ -73,17 +73,17 @@
     },
     "SESSION_ID": {
       "description": "Place your unique FLASH MD session ID here. This is required for the bot to function.",
-      "value": "",
+      "value": "FLASH-MD-WA-BOT;;;=>eyJub2lzZUtleSI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiVUVtK3EwRWJYbVZwQ29zNzExeWVxMXZ0dWFSbjQ2NHMrekE3ckkyRGRrST0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiV0NrUHFVMGh0eCtTbFozbXM2Qk9YVUJTZjVYZ01GZHMycDB0QS9jVENuST0ifX0sInBhaXJpbmdFcGhlbWVyYWxLZXlQYWlyIjp7InByaXZhdGUiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJpS0JtcjVOMlBaOW1WWEVSQmZmaEl5MWdpWmE3WGxDLzQrOHgwVWxpbUV3PSJ9LCJwdWJsaWMiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiI2Rk1ZaG9ENklZak9mT01kbktxQUtYMmNzRGZTamU3SDBSVE5JMnBqS1E4PSJ9fSwic2lnbmVkSWRlbnRpdHlLZXkiOnsicHJpdmF0ZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IldOODl4aW5jeThTZXJ4d1BCYkxyZDBBS1F4WU9KdzRkTnFTK1BMSHZjRjg9In0sInB1YmxpYyI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6ImJEMUNGRzRFOTU1QWppai8wR1dzMSsrZjhtdHJMYWtIVUtPMHFRdmI3WEU9In19LCJzaWduZWRQcmVLZXkiOnsia2V5UGFpciI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiVUlBZXg4OVFWNlVhTEpnTDNhc3ZYS3pMRVJ0UWE2WFJzV3ZOQ3JWRVYzUT0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiU1ZxVGM1SGd5blhUQ0tCYUxoMm9FZng3dzkySWF6WTdOMkdqd1RYT0JpST0ifX0sInNpZ25hdHVyZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6ImZIQkQyT05iUzJnRjFsN0NKTS9NZG9xWmpCQzQ5WlpMSE5nY2RGWXBOQjByU0NzbmpaSkZIWEJVajEyRGZ3ZVpOcEMzSFI0TExHT09SekJZMVV6eGp3PT0ifSwia2V5SWQiOjF9LCJyZWdpc3RyYXRpb25JZCI6OTcsImFkdlNlY3JldEtleSI6IkJmODBKd1RPMllwaENvOG5MTEx3d0VyOVVKN0JtOVNiYWpnS25JUXFVRWs9IiwicHJvY2Vzc2VkSGlzdG9yeU1lc3NhZ2VzIjpbXSwibmV4dFByZUtleUlkIjozMSwiZmlyc3RVbnVwbG9hZGVkUHJlS2V5SWQiOjMxLCJhY2NvdW50U3luY0NvdW50ZXIiOjAsImFjY291bnRTZXR0aW5ncyI6eyJ1bmFyY2hpdmVDaGF0cyI6ZmFsc2V9LCJkZXZpY2VJZCI6Im1JTDAzMWtJVEppTGR5aFNZblVILXciLCJwaG9uZUlkIjoiNmIxZjBiZmUtMzIyYy00OTgxLWExZTUtNzJiOWFjZTg3ZjQ5IiwiaWRlbnRpdHlJZCI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6InIxdWc1Q2NKZzViWWVneVNXcjNiT3ZwdmU3bz0ifSwicmVnaXN0ZXJlZCI6dHJ1ZSwiYmFja3VwVG9rZW4iOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJUVmtmQmRDSkVaTjZISnZhL283dVR5aGZsT3c9In0sInJlZ2lzdHJhdGlvbiI6e30sInBhaXJpbmdDb2RlIjoiUFk0QTdZUUgiLCJtZSI6eyJpZCI6IjI1NTY3NTEwNDQ5MDo0MUBzLndoYXRzYXBwLm5ldCJ9LCJhY2NvdW50Ijp7ImRldGFpbHMiOiJDUGpFcUIwUTB2WG91QVlZQXlBQUtBQT0iLCJhY2NvdW50U2lnbmF0dXJlS2V5IjoiY0tQTEJ3Zkl1ckQ3bFJMbHRHb3RWaFk0TVhOVVVNU0pZMXR3TDFRUFN3QT0iLCJhY2NvdW50U2lnbmF0dXJlIjoiNGJlNEdzL3ViTzRiSGtJcDBTb3RwRnBhaSthVzlHd2w2ZVllOHBsWGZaaFF2alpLbENRa3ozTlc3R3IyUnJwc2Y0dVhFaHJaYS9BZkZNTEVDTHdYQ2c9PSIsImRldmljZVNpZ25hdHVyZSI6IlF2YlJIRzdWSFppNHEzaWlqTndnNG5aU1BZWlV2WElRR2xhdHlGL0J5TE96dXRQVEpOemttUC95Q28rWENVWEE3YUdvMUVUZ3BGMDIyRVJqYWx1QWpRPT0ifSwic2lnbmFsSWRlbnRpdGllcyI6W3siaWRlbnRpZmllciI6eyJuYW1lIjoiMjU1Njc1MTA0NDkwOjQxQHMud2hhdHNhcHAubmV0IiwiZGV2aWNlSWQiOjB9LCJpZGVudGlmaWVyS2V5Ijp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiQlhDanl3Y0h5THF3KzVVUzViUnFMVllXT0RGelZGREVpV05iY0M5VUQwc0EifX1dLCJwbGF0Zm9ybSI6ImFuZHJvaWQiLCJsYXN0QWNjb3VudFN5bmNUaW1lc3RhbXAiOjE3Mjk3NzIyNTcsIm15QXBwU3RhdGVLZXlJZCI6IkFBQUFBRVU5In0=",
       "required": true
     },
     "OWNER_NAME": {
       "description": "Enter the name of the bot owner. This name will be displayed when required.",
-      "value": "France King",
+      "value": "PIRATE DJ",
       "required": false
     },
     "OWNER_NUMBER": {
       "description": "Enter your phone number without the '+' sign. Use your country code (e.g., '254' for Kenya).",
-      "value": "254751284190",
+      "value": "255675104490",
       "required": false
     },
     "WARN_COUNT": {
@@ -103,7 +103,7 @@
     },
     "PRESENCE": {
       "description": "Choose how you want to appear to others: 'online' (always online), 'typing' (currently typing), 'recording' (currently recording audio), or leave blank for real-time presence.",
-      "value": "",
+      "value": "typing",
       "required": false
     }
   },
